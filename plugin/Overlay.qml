@@ -25,15 +25,9 @@ Item {
     else if (msg.op === "hide") root.chars = []
   }
 
-  function reconnect() {
-    bridge.connected = false
-    bridge.connected = true
-  }
-
   Socket {
     id: bridge
     path: Quickshell.env("XDG_RUNTIME_DIR") + "/macmykeys.sock"
-    connected: true
     parser: SplitParser {
       splitMarker: "\n"
       onRead: function(line) { root.onLine(line) }
@@ -44,13 +38,16 @@ Item {
     onError: function(error) {
       bridge.connected = false
     }
+    Component.onCompleted: bridge.connected = true
   }
 
   Timer {
-    interval: 500
-    running: !bridge.connected
+    interval: 1000
+    running: true
     repeat: true
-    onTriggered: root.reconnect()
+    onTriggered: {
+      if (!bridge.connected) bridge.connected = true
+    }
   }
 
   readonly property int cell: Style.space(48)
