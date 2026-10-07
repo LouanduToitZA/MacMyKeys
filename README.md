@@ -18,7 +18,20 @@ The row itself is only a window. It does not take keys or clicks.
 
 ## Build
 
-Install a Rust toolchain, then from this repository:
+Install Rust with rustup:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable --profile minimal
+. "$HOME/.cargo/env"
+```
+
+On Omarchy the toolchain is also the `rust` package, which includes `cargo`:
+
+```bash
+sudo pacman -S --needed rust
+```
+
+Then, from this repository:
 
 ```bash
 cargo build --release
