@@ -1,0 +1,14 @@
+[Unit]
+Description=MacMyKeys hold-to-accent
+After=graphical-session.target
+PartOf=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/macmykeys
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

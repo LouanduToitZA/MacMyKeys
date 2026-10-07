@@ -1,0 +1,194 @@
+# Hold a letter this long before the accent row appears.
+hold_ms = 300
+
+# Steps are compose-key tokens. The daemon taps Caps Lock (the compose key),
+# then each step. A shifted letter uses the capital compose sequence.
+
+[[letter]]
+key = "a"
+[[letter.variant]]
+text = "à"
+steps = ["grave", "a"]
+[[letter.variant]]
+text = "á"
+steps = ["apostrophe", "a"]
+[[letter.variant]]
+text = "â"
+steps = ["asciicircum", "a"]
+[[letter.variant]]
+text = "ä"
+steps = ["quotedbl", "a"]
+[[letter.variant]]
+text = "æ"
+steps = ["a", "e"]
+[[letter.variant]]
+text = "ã"
+steps = ["asciitilde", "a"]
+[[letter.variant]]
+text = "å"
+steps = ["o", "a"]
+[[letter.variant]]
+text = "ā"
+steps = ["minus", "a"]
+
+[[letter]]
+key = "c"
+[[letter.variant]]
+text = "ç"
+steps = ["comma", "c"]
+[[letter.variant]]
+text = "ć"
+steps = ["apostrophe", "c"]
+[[letter.variant]]
+text = "č"
+steps = ["c", "c"]
+
+[[letter]]
+key = "d"
+[[letter.variant]]
+text = "ð"
+steps = ["d", "h"]
+
+[[letter]]
+key = "e"
+[[letter.variant]]
+text = "è"
+steps = ["grave", "e"]
+[[letter.variant]]
+text = "é"
+steps = ["apostrophe", "e"]
+[[letter.variant]]
+text = "ê"
+steps = ["asciicircum", "e"]
+[[letter.variant]]
+text = "ë"
+steps = ["quotedbl", "e"]
+[[letter.variant]]
+text = "ē"
+steps = ["minus", "e"]
+[[letter.variant]]
+text = "ė"
+steps = ["period", "e"]
+[[letter.variant]]
+text = "ę"
+steps = ["comma", "e"]
+
+[[letter]]
+key = "i"
+[[letter.variant]]
+text = "ì"
+steps = ["grave", "i"]
+[[letter.variant]]
+text = "í"
+steps = ["apostrophe", "i"]
+[[letter.variant]]
+text = "î"
+steps = ["asciicircum", "i"]
+[[letter.variant]]
+text = "ï"
+steps = ["quotedbl", "i"]
+[[letter.variant]]
+text = "ī"
+steps = ["minus", "i"]
+[[letter.variant]]
+text = "į"
+steps = ["comma", "i"]
+
+[[letter]]
+key = "l"
+[[letter.variant]]
+text = "ł"
+steps = ["slash", "l"]
+
+[[letter]]
+key = "n"
+[[letter.variant]]
+text = "ñ"
+steps = ["asciitilde", "n"]
+[[letter.variant]]
+text = "ń"
+steps = ["apostrophe", "n"]
+
+[[letter]]
+key = "o"
+[[letter.variant]]
+text = "ò"
+steps = ["grave", "o"]
+[[letter.variant]]
+text = "ó"
+steps = ["apostrophe", "o"]
+[[letter.variant]]
+text = "ô"
+steps = ["asciicircum", "o"]
+[[letter.variant]]
+text = "ö"
+steps = ["quotedbl", "o"]
+[[letter.variant]]
+text = "œ"
+steps = ["o", "e"]
+[[letter.variant]]
+text = "ø"
+steps = ["slash", "o"]
+[[letter.variant]]
+text = "õ"
+steps = ["asciitilde", "o"]
+[[letter.variant]]
+text = "ō"
+steps = ["minus", "o"]
+
+[[letter]]
+key = "s"
+[[letter.variant]]
+text = "ß"
+steps = ["s", "s"]
+[[letter.variant]]
+text = "ś"
+steps = ["apostrophe", "s"]
+[[letter.variant]]
+text = "š"
+steps = ["less", "s"]
+
+[[letter]]
+key = "t"
+[[letter.variant]]
+text = "þ"
+steps = ["t", "h"]
+
+[[letter]]
+key = "u"
+[[letter.variant]]
+text = "ù"
+steps = ["grave", "u"]
+[[letter.variant]]
+text = "ú"
+steps = ["apostrophe", "u"]
+[[letter.variant]]
+text = "û"
+steps = ["asciicircum", "u"]
+[[letter.variant]]
+text = "ü"
+steps = ["quotedbl", "u"]
+[[letter.variant]]
+text = "ū"
+steps = ["minus", "u"]
+
+[[letter]]
+key = "y"
+[[letter.variant]]
+text = "ý"
+steps = ["apostrophe", "y"]
+[[letter.variant]]
+text = "ÿ"
+steps = ["quotedbl", "y"]
+
+[[letter]]
+key = "z"
+[[letter.variant]]
+text = "ž"
+steps = ["less", "z"]
+[[letter.variant]]
+text = "ź"
+steps = ["apostrophe", "z"]
+[[letter.variant]]
+text = "ż"
+steps = ["period", "z"]

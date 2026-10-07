@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "louan.macmykeys",
+  "name": "MacMyKeys",
+  "version": "0.1.0",
+  "author": "Louan",
+  "description": "Hold a letter to pick an accent",
+  "kinds": ["overlay"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Overlay.qml"
+  }
+}
